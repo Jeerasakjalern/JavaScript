@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random hex color code</title>
+</head>
+<body>
+    <h2>random hex color code</h2>
+    <script>
+        const random_hex_color_code = () => { 
+        let n = (Math.random() * 0xffff * 1000000).toString(16);
+        return '#' + n.slice(0,6);
+    };
+
+        console.log(random_hex_color_code());
+    </script>
+</body>
+</html>
